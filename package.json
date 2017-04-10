@@ -1,19 +1,21 @@
 {
-  "name": "@athletiscope/react-native-timepicker",
+  "name": "@taw/react-native-timepicker",
   "version": "0.0.2",
-  "main": "index.ios.js",
-  "author": "Athletigen Inc.",
+  "description": "TimePicker (24 hours format) component for React Native",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goredefex/react-native-timepicker"
+    "url": "https://github.com/agilityworks-uk/react-native-timepicker.git"
   },
   "license": "MIT",
-  "description": "React native custom timepicker (24 hours format) for iOS",
-  "bugs": {
-    "url": "https://github.com/goredefex/react-native-timepicker/issues"
+  "dependencies": {
+    "@taw/react-native-framework": "^13.0.0",
+    "moment": ">=2.10.3",
+    "react": "15.3.2",
+    "react-native": "^0.35.0",
+    "underscore": "^1.8.3"
   },
-  "homepage": "https://github.com/goredefex/react-native-timepicker#readme",
-  "scripts": {
-    "test": "test"
+  "devDependencies": {
+    "@taw/react-native-framework": "^13.0.0",
   }
 }

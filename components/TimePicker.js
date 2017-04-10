@@ -1,15 +1,6 @@
-'use strict';
-
 import React, { Component } from 'react';
-
-import 
-{
-	AppRegistry,
-	View,
-	PickerIOS,
-	StyleSheet,
-
-} from 'react-native';
+import {View, PickerIOS, StyleSheet} from 'react-native';
+import localStyle from './styles';
 
 
 export default class TimePicker extends Component {
@@ -99,14 +90,14 @@ export default class TimePicker extends Component {
 		}
 
 		return (
-			<View style={[styles.container, this.props.style]}>
-				<PickerIOS style={styles.picker}
+			<View style={[localStyle.container, this.props.style]}>
+				<PickerIOS style={localStyle.picker}
 				           selectedValue={this.state.selectedHour}
 				           onValueChange={this._setHour}>
 					{hours}
 				</PickerIOS>
 
-				<PickerIOS style={styles.picker}
+				<PickerIOS style={localStyle.picker}
 				           selectedValue={this.state.selectedMinute}
 				           onValueChange={this._setMinute}>
 					{minutes}
@@ -115,15 +106,3 @@ export default class TimePicker extends Component {
 		);
 	}
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flexDirection: 'row'
-	},
-
-	picker: {
-		flex: 1
-	}
-});
-
-AppRegistry.registerComponent('TimePicker', () => TimePicker);
