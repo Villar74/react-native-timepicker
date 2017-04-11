@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, PickerIOS, StyleSheet} from 'react-native';
+import {View, PickerIOS} from 'react-native';
 import localStyle from './styles';
 
 
