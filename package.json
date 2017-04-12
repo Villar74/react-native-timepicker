@@ -8,6 +8,7 @@
     "url": "https://github.com/agilityworks-uk/react-native-timepicker.git"
   },
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "react": "15.3.2",
     "react-native": "^0.35.0"
